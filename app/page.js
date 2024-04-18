@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Home() {
  return (
     <main className="flex flex-col items-center justify-center min-h-screen p-24">
-      <header className="text-center mb-10">
-        <h1 className="text-4xl font-bold">Welcome to My App</h1>
+      <header className="text-center mb-10 text-maroon">
+        <h1 className="text-4xl font-bold">Choose your favorite team</h1>
       </header>
 
       <div className="flex flex-wrap justify-center gap-4">
