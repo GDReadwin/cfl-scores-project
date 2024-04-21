@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import React from 'react';
+import Link from 'next/link';
 
 const RootLayout = ({ children }) => {
  return (
@@ -11,9 +12,9 @@ const RootLayout = ({ children }) => {
             <h1 className="text-2xl">CFL Facts</h1>
           </header>
           <nav className="w-full bg-teal text-white py-2 flex justify-around">
-            <a href="/" className="hover:text-white">Home</a>
-            <a href="/FactsPage" className="hover:text-white">Facts</a>
-            <a href="/pages/contact" className="hover:text-white">Contact</a>
+            <Link href="/"><span className="hover:text-white">Home</span></Link>
+            <Link href="/pages/facts"><span className="hover:text-white">Facts</span></Link>
+            <Link href="/pages/contact"><span className="hover:text-white">Contact</span></Link>
           </nav>
           <main className="flex-grow">{children}</main>
         </div>
