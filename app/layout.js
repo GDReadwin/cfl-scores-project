@@ -10,8 +10,8 @@ const Layout = ({ children }) => {
       </header>
       <nav className="w-full bg-teal text-white py-2 flex justify-around">
         <a href="/" className="hover:text-white">Home</a>
-        <a href="/about" className="hover:text-white">About</a>
-        <a href="/contact" className="hover:text-white">Contact</a>
+        <a href="/pages/facts" className="hover:text-white">Facts</a>
+        <a href="/pages/contact" className="hover:text-white">Contact</a>
       </nav>
       <div>
       </div>
