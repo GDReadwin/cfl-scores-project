@@ -13,8 +13,8 @@ const RootLayout = ({ children }) => {
           </header>
           <nav className="w-full bg-teal text-white py-2 flex justify-around">
             <Link href="/"><span className="hover:text-white">Home</span></Link>
-            <Link href="/facts"><span className="hover:text-white">Facts</span></Link>
-            <Link href="/contact"><span className="hover:text-white">Contact</span></Link>
+            <Link href="/FactsPage/facts"><span className="hover:text-white">Facts</span></Link>
+            <Link href="/ContactPage/contact"><span className="hover:text-white">Contact</span></Link>
           </nav>
           <main className="flex-grow">{children}</main>
         </div>
