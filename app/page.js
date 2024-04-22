@@ -4,7 +4,7 @@ import Image from "next/image";
 
 // Define the teams constant directly in this file
 const teams = [
- { name: "BC Lions", primaryColor: "#f15524", secondaryColor: "#000000", tertiaryColor: "#ffffff", clicked: false, imagepath: 'public/images/image1.jpg' },
+ { name: "British Colombia Lions", primaryColor: "#f15524", secondaryColor: "#000000", tertiaryColor: "#ffffff", clicked: false, imagepath: 'public/images/image1.jpg' },
  { name: "Calgary Stampeders", primaryColor: "#d0202d", secondaryColor: "#ffffff", tertiaryColor: "#000000", clicked: false, imagepath: 'public/images/image2.jpg' },
  { name: "Edmonton Elk", primaryColor: "#ffb612", secondaryColor: "#2b5235", tertiaryColor: "#ffffff", clicked: false, imagepath: 'public/images/image3.jpg' },
  { name: "Hamilton Tiger-Cats", primaryColor: "#ffb612", secondaryColor: "#ffffff", tertiaryColor: "#000000", clicked: false, imagepath: 'public/images/image4.jpg' },
