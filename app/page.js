@@ -17,7 +17,7 @@ const teams = [
 
 export default function Home() {
  const [selectedTeam, setSelectedTeam] = useState(null);
- const [teamsState, setTeamsState] = useState(teams); // Add a new state to manage the teams
+ const [teamsState, setTeamsState] = useState(teams); 
 
  useEffect(() => {
     if (selectedTeam) {
@@ -47,30 +47,21 @@ export default function Home() {
    return (
     <main className="flex flex-col items-center justify-center min-h-screen p-24">
        {selectedTeam && (
-         <div className="text-center mb-10">
-           <h1 className="text-4xl font-bold">Favorite Team</h1>
-           <h2 className="text-2xl">{selectedTeam.name}</h2>
-           {/* Find the index of the selected team */}
-    {teams.map((team, index) => {
-      if (team.name === selectedTeam.name) {
-        // Use the index to generate the image path
-        return (
+        <div className="text-center mb-10">
+          <h1 className="text-4xl font-bold">Favorite Team</h1>
+          <h2 className="text-2xl">{selectedTeam.name}</h2>
           <Image
-            src={`/images/image${index + 1}.jpg`}
-            alt={`Image ${index + 1}`}
+            src={`/images/image${teams.findIndex(team => team.name === selectedTeam.name) + 1}.jpg`}
+            alt={`Image ${selectedTeam.name}`}
             width={300} // Double the width
             height={300} // Double the height
             className="square"
           />
-        );
-      }
-      return null;
-    })}
-           <p>Number of Grey Cup Wins: {selectedTeam.greyCupWins}</p>
-           <p>Most Recent Grey Cup Win: {selectedTeam.mostRecentWin}</p>
-           <p>Last Season Record: {selectedTeam.lastSeasonRecord}</p>
-         </div>
-       )}
+          <p>Number of Grey Cup Wins: {selectedTeam.greyCupWins}</p>
+          <p>Most Recent Grey Cup Win: {selectedTeam.mostRecentWin}</p>
+          <p>Last Season Record: {selectedTeam.lastSeasonRecord}</p>
+        </div>
+      )}
    
        <header className="text-center mb-10">
          <h1 className="text-4xl font-bold">Choose your favorite team</h1>
