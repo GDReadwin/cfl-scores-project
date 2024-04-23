@@ -5,14 +5,14 @@ import Image from "next/image";
 // Define the teams constant directly in this file
 const teams = [
  { name: "British Colombia Lions", primaryColor: "#f15524", secondaryColor: "#000000", tertiaryColor: "#ffffff", clicked: false, imagepath: './public/images/image1.jpg', greyCupWins: 6, mostRecentWin: "2011", lastSeasonRecord: "12-6-0-24" },
- { name: "Calgary Stampeders", primaryColor: "#d0202d", secondaryColor: "#ffffff", tertiaryColor: "#000000", clicked: false, imagepath: './public/images/image2.jpg', greyCupWins: 6, mostRecentWin: "2011", lastSeasonRecord: "6-12-0-12" },
- { name: "Edmonton Elk", primaryColor: "#ffb612", secondaryColor: "#2b5235", tertiaryColor: "#ffffff", clicked: false, imagepath: './public/images/image3.jpg', greyCupWins: 6, mostRecentWin: "2011", lastSeasonRecord: "4-14-0-8" },
- { name: "Hamilton Tiger-Cats", primaryColor: "#ffb612", secondaryColor: "#ffffff", tertiaryColor: "#000000", clicked: false, imagepath: './public/images/image4.jpg', greyCupWins: 6, mostRecentWin: "2011", lastSeasonRecord: "8-10-0-16" },
- { name: "Montreal Alouettes", primaryColor: "#183c6e", secondaryColor: "#8c2334", tertiaryColor: "#a2a5aa", clicked: false, imagepath: './public/images/image5.jpg', greyCupWins: 6, mostRecentWin: "2011", lastSeasonRecord: "11-7-0-22" },
- { name: "Ottawa Redblacks", primaryColor: "#000000", secondaryColor: "#ffffff", tertiaryColor: "#a71930", clicked: false, imagepath: './public/images/image6.jpg', greyCupWins: 6, mostRecentWin: "2011", lastSeasonRecord: "4-14-0-8" },
- { name: "Saskatchewan Roughriders", primaryColor: "#036242", secondaryColor: "#ffffff", tertiaryColor: "#000000", clicked: false, imagepath: './public/images/image7.jpg', greyCupWins: 6, mostRecentWin: "2011", lastSeasonRecord: "6-12-0-12" },
- { name: "Toronto Argonauts", primaryColor: "#5f8fb1", secondaryColor: "#0d2240", tertiaryColor: "#ffffff", clicked: false, imagepath: './public/images/image8.jpg', greyCupWins: 6, mostRecentWin: "2011", lastSeasonRecord: "16-2-0-32" },
- { name: "Winnipeg Blue Bombers", primaryColor: "#1d3d37", secondaryColor: "#bc9658", tertiaryColor: "#ffffff", clicked: false, imagepath: './public/images/image9.jpg', greyCupWins: 6, mostRecentWin: "2011", lastSeasonRecord: "14-4-0-28" },
+ { name: "Calgary Stampeders", primaryColor: "#d0202d", secondaryColor: "#ffffff", tertiaryColor: "#000000", clicked: false, imagepath: './public/images/image2.jpg', greyCupWins: 8, mostRecentWin: "2018", lastSeasonRecord: "6-12-0-12" },
+ { name: "Edmonton Elk", primaryColor: "#ffb612", secondaryColor: "#2b5235", tertiaryColor: "#ffffff", clicked: false, imagepath: './public/images/image3.jpg', greyCupWins: 14, mostRecentWin: "2015 (as Edmonton Eskimos)", lastSeasonRecord: "4-14-0-8" },
+ { name: "Hamilton Tiger-Cats", primaryColor: "#ffb612", secondaryColor: "#ffffff", tertiaryColor: "#000000", clicked: false, imagepath: './public/images/image4.jpg', greyCupWins: 8, mostRecentWin: "1999", lastSeasonRecord: "8-10-0-16" },
+ { name: "Montreal Alouettes", primaryColor: "#183c6e", secondaryColor: "#8c2334", tertiaryColor: "#a2a5aa", clicked: false, imagepath: './public/images/image5.jpg', greyCupWins: 8, mostRecentWin: "2023 (Current Champions!)", lastSeasonRecord: "11-7-0-22" },
+ { name: "Ottawa Redblacks", primaryColor: "#000000", secondaryColor: "#ffffff", tertiaryColor: "#a71930", clicked: false, imagepath: './public/images/image6.jpg', greyCupWins: 1, mostRecentWin: "2016", lastSeasonRecord: "4-14-0-8" },
+ { name: "Saskatchewan Roughriders", primaryColor: "#036242", secondaryColor: "#ffffff", tertiaryColor: "#000000", clicked: false, imagepath: './public/images/image7.jpg', greyCupWins: 4, mostRecentWin: "2013", lastSeasonRecord: "6-12-0-12" },
+ { name: "Toronto Argonauts", primaryColor: "#5f8fb1", secondaryColor: "#0d2240", tertiaryColor: "#ffffff", clicked: false, imagepath: './public/images/image8.jpg', greyCupWins: 18, mostRecentWin: "2022", lastSeasonRecord: "16-2-0-32" },
+ { name: "Winnipeg Blue Bombers", primaryColor: "#1d3d37", secondaryColor: "#bc9658", tertiaryColor: "#ffffff", clicked: false, imagepath: './public/images/image9.jpg', greyCupWins: 12, mostRecentWin: "2021", lastSeasonRecord: "14-4-0-28" },
 ];
 
 export default function Home() {
