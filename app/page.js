@@ -48,7 +48,7 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center min-h-screen p-24">
        {selectedTeam && (
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold">Favorite Team</h1>
+          <h1 className="text-4xl font-bold">Chosen Team</h1>
           <h2 className="text-2xl">{selectedTeam.name}</h2>
           <Image
             src={`/images/image${teams.findIndex(team => team.name === selectedTeam.name) + 1}.jpg`}
