@@ -46,8 +46,17 @@ export default function Home() {
 
    return (
     <main className="flex flex-col items-center justify-center min-h-screen p-24">
-       {selectedTeam && (
-        <div className="text-center mb-10">
+      {selectedTeam && (
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          textAlign: 'center',
+          width: '100%',
+          maxWidth: '600px', // Adjust this value as needed
+          margin: '0 auto',
+        }}>
           <h1 className="text-4xl font-bold">Chosen Team</h1>
           <h2 className="text-2xl">{selectedTeam.name}</h2>
           <Image
